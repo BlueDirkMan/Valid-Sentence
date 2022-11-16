@@ -25,9 +25,8 @@ def valid_sentence(sentence: str) -> bool:
     # Initial Check
     if type(sentence) != str:
         raise TypeError("Argument passed must be a string")
-    sentence_list = list(sentence.split(" "))
 
-    # If the sentence list contains blank characters resulting from unconventional spacing in the given sentence string
+    sentence_list = list(sentence.split(" "))
     if "" in sentence_list:
         raise ValueError("Argument string passed must not have unconventional spacing (Ex. Start or end with spacing)")
 
